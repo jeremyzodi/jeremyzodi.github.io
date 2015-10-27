@@ -9,14 +9,8 @@
 
 <script type="text/javascript">
     function enterTime() {
-   // document.write("<IMG ALIGN='center' "+
-     //               "SRC='tumblr_static_greenbox.png'> " +
-       //            "<BR><BR>"); 
-var myWindow = window.open("", "MsgWindow", "width=200, height=100");
-myWindow.document.write("<p>This is 'MsgWindow'. I am 200px wide and 100px tall!</p><IMG ALIGN='center' "+
-                   "SRC='tumblr_static_greenbox.png'> " +
-                  "<BR><BR>");
-document.append("<input type='text' name='fname'><br>");
+   
+		document.append("\n\n\n\n\n<input type='text' name='fname'><br>");
 
     }
     function currentTime() {
@@ -52,7 +46,9 @@ document.append("<input type='text' name='fname'><br>");
 				else if (minutes > 40 || minutes <= 5) {
 					return "good time";
 				}
-				
+		}
+		else {
+			return "not a lunch time";
 		}
 	}	
 	
@@ -68,11 +64,21 @@ document.append("<input type='text' name='fname'><br>");
 				else if (minutes > 50 || miutes <= 15) {
 					return "good time";
 				}
-				
+		}
+		if (hours == 11) {
+		
+				if (minutes > 15 && minutes <= 30) {
+					return "bad time";
+				}
+				else if (minutes > 30 && minutes < 50) {
+					return "okay time";
+				}
+				else if (minutes > 50 || miutes <= 15) {
+					return "good time";
+				}
+		}
+		else {
+			return "not a lunch time";
 		}
 	}
-	
-	calculateLunch(2, 12, 41);
-calculateLunch(3, 12, 5);
-currentTime();
 </script>
