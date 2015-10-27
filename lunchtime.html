@@ -1,0 +1,66 @@
+<html>
+<b>
+"Hello world"
+</b>
+</html>
+
+<script type="text/javascript">
+
+calculateLunch(2, 12, 41);
+calculateLunch(3, 12, 5);
+currentTime();
+    function currentTime() {
+	    var d = new Date();
+	    var n = d.getTime();
+	    var converted = new Date(n);
+	    var hours = converted.getHours();
+	    var minutes = converted.getMinutes();
+		var day = converted.getDay();
+		calculateLunch(day, hours, minutes);
+	}
+    
+    function calculateLunch(day, hours, minutes) {
+		if (day == 2 || day == 4 || day == 6) {
+			var status = calculateMWF(hours, minutes);
+			alert(status);
+		}
+		else if (day == 3 || day == 5) {
+			var status = calculateTR(hours, minutes);
+			alert(status);
+		}
+
+    }
+
+	function calculateMWF(hours, minutes) {
+		switch(hours) {
+			case 12:
+				if (minutes > 5 && minutes <= 20) {
+					return "bad time";
+				}
+				else if (minutes > 20 && minutes <= 40) {
+					return "okay time";
+				}
+				else if (minutes > 40 || minutes <= 5) {
+					return "good time";
+				}
+				
+		}
+	}
+	
+	function calculateTR(hours, minutes) {
+		switch(hours) {
+		alert("got to function");
+			case 12:
+				if (minutes > 15 && minutes <= 30) {
+					return "bad time";
+				}
+				else if (minutes > 30 && minutes < 50) {
+					return "okay time";
+				}
+				else if (minutes > 50 || miutes <= 15) {
+					return "good time";
+				}
+				
+		}
+	}
+</script>
