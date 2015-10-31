@@ -1,18 +1,13 @@
 <html>
 
-<p> For what time would you like to calculate lunch lines? </p>
+<p> Click on the button to see whether it's a good time to get lunch at VT dining halls! </p>
 <button onclick="currentTime()">Current Time</button>
 
-<button onclick="enterTime()">Enter a Time</button>
 </html>
 
 
 <script type="text/javascript">
-    function enterTime() {
-   
-		document.append("\n\n\n\n\n<input type='text' name='fname'><br>");
-
-    }
+ 
     function currentTime() {
 	    var d = new Date();
 	    var n = d.getTime();
@@ -37,15 +32,52 @@
 
 	function calculateMWF(hours, minutes) {
 		if (hours == 12) {
+		
 			if (minutes > 5 && minutes <= 20) {
-					return "bad time";
-				}
-				else if (minutes > 20 && minutes <= 40) {
-					return "okay time";
-				}
-				else if (minutes > 40 || minutes <= 5) {
-					return "good time";
-				}
+				return "bad time";
+			}
+			else if (minutes > 20 && minutes <= 40) {
+				return "okay time";
+			}
+			else if (minutes > 40 || minutes <= 5) {
+				return "good time";
+			}
+		}
+		else if (hours == 11) {
+		
+			if (minutes >= 00 && minutes <= 15) {
+				return "bad time";
+			}
+			else if (minutes > 15 && minutes <= 35) {
+				return "okay time";
+			}
+			else if (minutes > 35) {
+				return "good time";
+			}
+		}
+		else if (hours == 1) {
+		
+			if (minutes >= 10 && minutes <= 25) {
+				return "bad time";
+			}
+			else if (minutes > 25 && minutes <= 45) {
+				return "okay time";
+			}
+			else if (minutes > 45 || minutes < 10) {
+				return "good time";
+			}
+		}
+		else if (hours == 2) {
+		
+			if (minutes > 15 && minutes <= 30) {
+				return "bad time";
+			}
+			else if (minutes > 30 && minutes <= 50) {
+				return "okay time";
+			}
+			else if (minutes > 50 || minutes <= 15) {
+				return "good time";
+			}
 		}
 		else {
 			return "not a lunch time";
@@ -53,7 +85,7 @@
 	}	
 	
 	function calculateTR(hours, minutes) {
-		if (hours == 12) {
+		if (hours == 12 || hours == 3) {
 		
 				if (minutes > 15 && minutes <= 30) {
 					return "bad time";
@@ -65,16 +97,22 @@
 					return "good time";
 				}
 		}
-		if (hours == 11) {
+		else if (hours == 11 || hours == 2) {
 		
-				if (minutes > 15 && minutes <= 30) {
-					return "bad time";
-				}
-				else if (minutes > 30 && minutes < 50) {
+				if (minutes >= 00 && minutes <= 25) {
 					return "okay time";
 				}
-				else if (minutes > 50 || miutes <= 15) {
+				else {
 					return "good time";
+				}
+		}
+		else if (hours == 1) {
+		
+				if (minutes >= 00 && minutes <= 45) {
+					return "good time";
+				}
+				else {
+					return "bad time";
 				}
 		}
 		else {
