@@ -1,6 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Jeremy Zodi</title>
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+	</head>
+	
+	<body>
+		<div class="background">
+			<img src="img/mountains.jpg" alt="background" />
+		</div>
+	
+		<div id="wrapper">
+			
+			<div id="header">
+				<h1 id="title">Jeremy Zodi</h1>
+			</div>
+			
+			<p> My name is Jeremy Zodi and I'm a Computer Science major at Virginia Tech
+				My resume is <a href="http://jeremyzodi.github.io/Resume.PDF">here</a></p>
+				
+			<div id="like_button_container"></div>
+			
+			<!-- Load React. -->
+			<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+			<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+			<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
-	<p> My name is Jeremy Zodi and I'm a Computer Science major at Virginia Tech
-		My resume is <a href="http://jeremyzodi.github.io/Resume.PDF">here</a></p>
+			<!-- Load our React component. -->
+			<script src="like_button.js"></script>
+		<div id="wrapper">
+
+	</body>
 </html>
