@@ -32,10 +32,9 @@
 
 @media all and (max-width: 399px)  {
 	body{
-		background-size: 200px 200px;
+		background-size: cover;
 		margin-left: 100px;
 		margin-right: 100px;
-		min-height: 100%;
 	}
 	
 	ul#nav>li>a {
