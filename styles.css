@@ -18,7 +18,7 @@
 	}
 }
 
-@media all and (max-width: 819px) and (min-width: 500px)  {
+@media all and (max-width: 819px)  {
 	body{
 		background-size: 1500px auto;
 		margin-left: 100px;
