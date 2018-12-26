@@ -30,9 +30,9 @@
 	}
 }
 
-@media all and (max-width: 400px)  {
+@media all and (max-width: 399px)  {
 	body{
-		background-size: 1000px auto;
+		background-size: 200px 200px;
 		margin-left: 100px;
 		margin-right: 100px;
 	}
