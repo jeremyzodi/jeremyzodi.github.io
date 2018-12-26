@@ -1,13 +1,42 @@
+@media all and (min-width: 1305px) {
+	body{
+		background-size: covers;
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+}
+
+@media all and (max-width: 1304px) and (min-width: 820px)  {
+	body{
+		background-size: 1500px auto;
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+	
+	ul#nav>li>a {
+		margin-bottom: 20px;
+	}
+}
+
+@media all and (max-width: 819px) and (min-width: 500px)  {
+	body{
+		background-size: 1500px auto;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	
+	ul#nav>li>a {
+		margin-bottom: 20px;
+	}
+}
+
 body {
 	color: #DAE7E7;
 	font-family: sans-serif;
 	background-image: url("img/tree.jpg");
-	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: bottom;
-	margin-left: 200px;
-	margin-right: 200px;
 }
 
 h1 {
@@ -24,21 +53,30 @@ ul#nav {
 	margin-left: 2%;
 }
 
+ul#nav>li {
+	width: 100%;
+	margin-right: none;
+}
+
 
 ul#nav>li>a {
 	text-decoration: none;
 	color: #DAE7E7;
 	border-style: solid;
 	padding: 16px 50px 12px 50px;
+	width: 200px;
 	display: inline-block;
+	box-sizing: border-box;
 }
 
 ul#nav>li a:hover {
 	text-decoration: none !important;
-	padding: 12px 46px 8px 46px;
+	padding: 14px 48px 11px 48px;
 	border: 4px;
 	border-style: solid;
-	background-color: 	#C0C0C0;
+	width: 200px;
+	display: inline-block;
+	background-color: #C0C0C0;
 }
 
 ul#nav>li a:link{
@@ -46,7 +84,7 @@ ul#nav>li a:link{
 }
 
 .text {
-	font-size: 1em;
+	font-size: 1.3em;
 }
 
 div#main {
@@ -272,22 +310,6 @@ div#wrapper {
 	margin: 20px;
 }
 
-div#header {
-	width: 100%;
-	height: 70px;
-	padding-bottom: 70px;
-}
-
-
-.covers {
-	margin: 0 20px 20px 0;
-	display: block;
-	float: left;
-}
-.covers img {
-	width: 250px;
-	height: 250px;
-}
 
 ul#itemNav {
 	height: 100%;
