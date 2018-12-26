@@ -18,9 +18,21 @@
 	}
 }
 
-@media all and (max-width: 819px)  {
+@media all and (max-width: 819px) and (min-width: 400px)  {
 	body{
 		background-size: 1500px auto;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	
+	ul#nav>li>a {
+		margin-bottom: 20px;
+	}
+}
+
+@media all and (max-width: 400px)  {
+	body{
+		background-size: 1000px auto;
 		margin-left: 100px;
 		margin-right: 100px;
 	}
@@ -36,7 +48,7 @@ body {
 	background-image: url("img/tree.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: top;
+	background-position: bottom;
 }
 
 h1 {
