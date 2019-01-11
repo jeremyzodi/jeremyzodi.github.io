@@ -45,8 +45,8 @@ div#header {
 img {
 	border-radius: 50%;
 	margin-left: -200px;
-	max-width: 250px;
-	max-height: 250px;
+	max-width: 400px;
+	max-height: 400px;
 	margin-left: 50%;
 	transform: translate(-50%, 0%);
 	border: solid thick;
